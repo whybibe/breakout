@@ -43,10 +43,10 @@ function create() {
     initBricks();
 
     textStyle = { font: '18px Arial', fill: '#0095DD' };
-    scoreText = game.add.text(5, 5, 'Points: 0', textStyle);
-    livesText = game.add.text(game.world.width-5, 5, 'Lives: '+lives, textStyle);
+    scoreText = game.add.text(5, 5, '得分: 0', textStyle);
+    livesText = game.add.text(game.world.width-5, 5, '生命值'+lives, textStyle);
     livesText.anchor.set(1,0);
-    lifeLostText = game.add.text(game.world.width*0.5, game.world.height*0.5, 'Life lost, tap to continue', textStyle);
+    lifeLostText = game.add.text(game.world.width*0.5, game.world.height*0.5, '丢失一个生命值，请点击继续游戏', textStyle);
     lifeLostText.anchor.set(0.5);
     lifeLostText.visible = false;
 
